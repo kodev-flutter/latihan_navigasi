@@ -27,12 +27,7 @@ class SecondPage extends StatelessWidget {
                   primary: Colors.red,
                 ),
                 onPressed: () {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                      builder: (context) => ThreePage(),
-                    ),
-                  );
+                  Navigator.pushNamed(context, '/three-page');
                 },
                 child: Text('Pindah helaman'),
               ),

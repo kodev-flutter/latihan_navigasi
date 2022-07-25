@@ -21,15 +21,11 @@ class HomePage extends StatelessWidget {
                 height: 12,
               ),
               ElevatedButton(
-                  onPressed: () {
-                    Navigator.pushReplacement(
-                      context,
-                      MaterialPageRoute(
-                        builder: (context) => const SecondPage(),
-                      ),
-                    );
-                  },
-                  child: Text('Pindah helaman'))
+                onPressed: () {
+                  Navigator.pushNamed(context, '/second-page');
+                },
+                child: Text('Pindah helaman'),
+              ),
             ],
           ),
         ));
