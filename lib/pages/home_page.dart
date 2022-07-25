@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:latihan_navigasi/pages/second_page.dart';
+import 'package:get/get.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -22,7 +23,9 @@ class HomePage extends StatelessWidget {
               ),
               ElevatedButton(
                 onPressed: () {
-                  Navigator.pushNamed(context, '/second-page');
+                  Get.to(SecondPage(),
+                      transition: Transition.zoom,
+                      duration: Duration(milliseconds: 200));
                 },
                 child: Text('Pindah helaman'),
               ),

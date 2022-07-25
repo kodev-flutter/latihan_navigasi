@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:latihan_navigasi/pages/three_page.dart';
+import 'package:get/get.dart';
 
 class SecondPage extends StatelessWidget {
   const SecondPage({Key? key}) : super(key: key);
@@ -27,7 +28,7 @@ class SecondPage extends StatelessWidget {
                   primary: Colors.red,
                 ),
                 onPressed: () {
-                  Navigator.pushNamed(context, '/three-page');
+                  Get.to(ThreePage());
                 },
                 child: Text('Pindah helaman'),
               ),

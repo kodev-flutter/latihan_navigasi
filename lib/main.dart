@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:latihan_navigasi/pages/home_page.dart';
+import 'package:latihan_navigasi/pages/main_page.dart';
 import 'package:latihan_navigasi/pages/second_page.dart';
 import 'package:latihan_navigasi/pages/three_page.dart';
+import 'package:get/get.dart';
 
 void main() {
   runApp(const MyApp());
@@ -12,13 +14,9 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return const GetMaterialApp(
       debugShowCheckedModeBanner: false,
-      routes: {
-        '/': (context) => const HomePage(), //ini halaman Home page awal
-        '/second-page': (context) => const SecondPage(), // ini halaman kedua
-        '/three-page': (context) => const ThreePage(), // ini halaman ketiga
-      },
+      home: MainPage(),
     );
   }
 }
